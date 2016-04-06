@@ -48,6 +48,20 @@ $('#one').mouseout(function() {
 
 });
 
-	
+// NAVIGATION SLIDE IN EFFECT
+    
+var header = $('.noBackground');
+	$(window).scroll(function() {
+		var scroll = $(window).scrollTop();
+
+		if (scroll >= 20) {
+			//header.removeClass('noBackground').addClass('blackBackground').fadeIn("slow");
+            $('nav').slideDown("slow").addClass('blackBackground').fadeIn("slow");
+		} else {
+			//header.removeClass('blackBackground').fadeOut("slow").addClass('noBackground');
+            $('nav').slideUp("slow").fadeOut("slow");
+		}
+	});
+    
 });
 /* end ready function */

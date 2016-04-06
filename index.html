@@ -1,6 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,49 +13,25 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/YTPlayer.css">
     <link rel="stylesheet" href="css/animate.min.css">
-    
-    <script type="text/javascript" src="js/navigation-slide.js"></script>
       
     <!-- Google Einbindunen -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
 
-  <script type="text/javascript">  $(function(){
-    $(".player").mb_YTPlayer();
-  });
- </script>
-
-
-<script>
-    
-    $(function() {
-	//caches a jQuery object containing the header element
-	var header = $('.noBackground');
-	$(window).scroll(function() {
-		var scroll = $(window).scrollTop();
-
-		if (scroll >= 20) {
-			//header.removeClass('noBackground').addClass('blackBackground').fadeIn("slow");
-            $('nav').slideDown("slow").addClass('blackBackground').fadeIn("slow");
-		} else {
-			//header.removeClass('blackBackground').fadeOut("slow").addClass('noBackground');
-            $('nav').slideUp("slow").fadeOut("slow");
-		}
-	});
-});
-    
-</script>
-
-  </head>
+    <script type="text/javascript">  $(function(){
+            $(".player").mb_YTPlayer();
+        });
+    </script>
+</head>
 <body>
-    
-
 
     <!-- Preloader -->
+    
     <div class="mask">
       <div id="loader" class="rotating"></div>
     </div>
-<!--/Preloader -->
+    
+    <!--/Preloader -->
 
 <nav class="noBackground">
     <ul data-magellan>
@@ -74,13 +50,13 @@
 <!-- start section team -->
     
 <section id="team">
+    
     <h1 class="headline">Team</h1>
     
     <div class="content">
     
     <div class="row">
     <div class="large-12 columns"> 
-
         
       <!-- start team box -->
       <div class="large-3 medium-6 small-12 columns team" data-scrollreveal="enter bottom and move 150px after 0.3s">
@@ -146,7 +122,8 @@
       <!-- end team box --> 
 
     </div>
-  </div>
+    </div>
+        
     </div>
 </section>
 <!-- end section team --> 
