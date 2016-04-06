@@ -12,10 +12,13 @@
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/YTPlayer.css">
-
     <link rel="stylesheet" href="css/animate.min.css">
-
+    
+    <script type="text/javascript" src="js/navigation-slide.js"></script>
+      
+    <!-- Google Einbindunen -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
 
   <script type="text/javascript">  $(function(){
     $(".player").mb_YTPlayer();
@@ -23,32 +26,62 @@
  </script>
 
 
-  </script>
+<script>
+    
+    $(function() {
+	//caches a jQuery object containing the header element
+	var header = $('.noBackground');
+	$(window).scroll(function() {
+		var scroll = $(window).scrollTop();
+
+		if (scroll >= 20) {
+			//header.removeClass('noBackground').addClass('blackBackground').fadeIn("slow");
+            $('nav').slideDown("slow").addClass('blackBackground').fadeIn("slow");
+		} else {
+			//header.removeClass('blackBackground').fadeOut("slow").addClass('noBackground');
+            $('nav').slideUp("slow").fadeOut("slow");
+		}
+	});
+});
+    
+</script>
 
   </head>
 <body>
+    
 
-<!-- Preloader -->
-<div class="mask">
-  <div id="loader" class="rotating"></div>
-</div>
+
+    <!-- Preloader -->
+    <div class="mask">
+      <div id="loader" class="rotating"></div>
+    </div>
 <!--/Preloader -->
 
-
+<nav class="noBackground">
+    <ul data-magellan>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
     
 <!-- HEADER-BEREICH -->
     
   <div id="header"><img src="css/img/logo-sample.png" id="logo" class="animated fadeInDownBig"/></div>
     
 <!-- start section team -->
+    
 <section id="team">
-  <div class="row">
-    <div class="large-12 columns">
-      <h1>Team</h1>
-      <h2>Subheading</h2>
-    </div>
+    <h1 class="headline">Team</h1>
+    
+    <div class="content">
+    
+    <div class="row">
     <div class="large-12 columns"> 
-      
+
+        
       <!-- start team box -->
       <div class="large-3 medium-6 small-12 columns team" data-scrollreveal="enter bottom and move 150px after 0.3s">
         <div class="team-item">
@@ -114,16 +147,12 @@
 
     </div>
   </div>
+    </div>
 </section>
 <!-- end section team --> 
 
-<a href="#">
-<img src="http://www.geekchamp.com/upload/symbolicons/animals/1f424-chicken.png" 
-onmouseover="this.src='http://www.geekchamp.com/upload/symbolicons/animals/1f423-chick.png'"
-onmouseout="this.src='http://www.geekchamp.com/upload/symbolicons/animals/1f424-chicken.png'"
-border="0" alt=""/></a>
-
 <!-- start video section -->
+<div class="content">
 <section id="video-section">
   <div id="video-box"></div>
   <!-- Video overlay -->
@@ -139,11 +168,13 @@ border="0" alt=""/></a>
     <a id="video" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=wIHfcSEJyu0',containment:'#video-box', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, addRaster:false, quality:'highres'}">My video</a>
   </div>
 </section>
+</div>
 <!-- end video section --> 
 
 <!-- START SERVICES -->
-      
-    <h1 class="headline">What we offer</h1>
+    
+    <section id="service"></section>
+    <h1 class="headline">Service</h1>
       
     <div class="content">
         
@@ -170,16 +201,19 @@ border="0" alt=""/></a>
         
     </div>
     
+    
     <!-- PORTFOLIO-BEREICH -->  
     
-    <h1 class="headline">Portfolio</h1>
+    <section id="projects"></section>
+    <h1 class="headline">Projects</h1>
       
     <div class="content">
         <p style="text-align:center">Future Content goes here.</p>
     </div>
     
+    
     <!-- CONTACT-BEREICH -->
-      
+    <section id="projects"></section>
     <h1 class="headline">Contact</h1>
     
     <div class="content">
