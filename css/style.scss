@@ -228,6 +228,37 @@ ul.social-team {
     }
 }
 
+.container {
+    position:relative;
+    overflow:hidden;
+    width:100%;
+    height:100%;
+}
+.container .textbox {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    margin-left:-100%;
+}
+.container:hover .textbox {
+    margin-left:0;
+}
+.container .firstIMG {
+    margin-left:0;
+}
+.container:hover .firstIMG {
+    margin-left:100%;
+}
+
+.container .firstIMG, .textbox {
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+
+
+
 /* ==============================================
     Video Section
 =============================================== */
