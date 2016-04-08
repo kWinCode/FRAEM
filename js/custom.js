@@ -15,6 +15,15 @@ jQuery(document).ready(function ($) {
 'use strict';
 
 /* ==============================================
+    variable screen height
+=============================================== */  
+function getHeight() {
+    var x = screen.height-150 + "px";
+    document.getElementById("header").style.height =x;
+}
+window.onload = getHeight;
+
+/* ==============================================
 	Video Player
 =============================================== */	
 $(function(){
