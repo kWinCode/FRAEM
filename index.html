@@ -25,8 +25,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
     <script src="js/parallax.min.js"></script>
+    <script src="js/responsive-nav.js"></script>
+    <script type="text/javascript">
+      function getHeight() {
+        var x = screen.height-150 + "px";
+        document.getElementById("header").style.height =x;
+      }
+      window.onload = getHeight;
 
-        <script src="js/responsive-nav.js"></script>
+    </script>
 
         
     </script>
@@ -59,7 +66,7 @@
           <li class="menu-item"><a href="#team">Team</a></li>
           <li class="menu-item"><a href="#service">Services</a></li>
           <li class="menu-item"><a href="#projects">Projects</a></li>
-          <li class="menu-item"><a href="#contacts">Contact</a></li>
+          <li class="menu-item"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -263,58 +270,19 @@
     </div>
     
     
-<!-- CONTACT-BEREICH -->
-<section id="contacts" >
-  <div class="row">
-    <div class="large-12 columns">
-      <h1 class="title-section bold white"><span class="nbr">03.</span>Contact<span class="border"></span> </h1>
-      <h2 class="subtitle-section white">Feel free to leave me a message.</h2>
+    <!-- CONTACT-BEREICH -->
+    <section id="contact"></section>
+    <h1 class="headline">Contact</h1>
+    
+    <div class="content">
+        <p style="text-align:center">Future Content goes here.</p>
     </div>
-    <div class="large-6 medium-6 columns text-left">
-      <h4 class="white bold">Get in Touch</h4>
-      <p>Bacon ipsum dolor amet pork chop hamburger porchetta doner kevin. Tongue capicola meatloaf salami chuck. Filet mignon flank beef ribs landjaeger brisket boudin shank ball tip ribeye chuck. Tongue shank shankle pork corned beef prosciutto. Meatloaf corned beef pork loin meatball turducken spare ribs. Swine prosciutto ribeye drumstick cupim kevin. 
-      </p>
-      <h4 class="white bold">Details</h4>
-      <ul class="contact-detail">
-        <li><strong><i class="fa fa-map-marker"></i> Address: </strong>Matthias Corvinus-Straße 15, St. Pölten, Austria</li>
-        <li><strong><i class="fa fa-phone"></i> Phone: </strong>+43677 616 039 75</li>
-        <li><strong><i class="fa fa-envelope"></i> Email: </strong><a href="#" title="">office@fraem.at</a></li>
-        <li><strong>Social Networks: </strong> 
-        <a href="#" title="facebook"><i class="fa fa-facebook"></i>
-        <a href="#" title="steam"><i class="fi-social-steam"></i></a> 
-        <a href="#" title="twitter"><i class="fa fa-twitter"></i></a>
-        <a href="#" title="google plus"><i class="fa fa-google-plus"></i></a> 
-        </li>
-      </ul>
-    </div>
-    <div class="large-6  medium-6 columns text-left">
-      <h4 class="white bold">Contact form</h4>
-        
-        <!-- start contact form -->
-      <form class="contactForm form" id="contact" method="post">
-        <label>Name:</label>
-        <input name="name" id="name" type="text" placeholder="Your Name">
-        <label>Email:</label>
-        <input name="email" id="email" type="text" placeholder="Your E-Mail address">
-        <label>Message:</label>
-        <textarea  name="text" id="text" placeholder="Your Message"></textarea>
-        <input type="submit" value="Send" name="submit" class="submit-button">
-        <div id="form-sent">
-          <p class="white">Thank you! I will respond as soon as possible.</p>
-        </div>
-      </form>
-<!-- end contact form -->
-        
-    </div>
-  </div>
-
-</section>
       
-<!-- FOOTER-BEREICH -->
+    <!-- FOOTER-BEREICH -->
       
-<footer>
-&copy;2016<script>new Date().getFullYear()>2016&&document.write("-"+new Date().getFullYear());</script> FRAEM. All rights reserved.
-</footer>
+    <footer>
+        &copy;2016<script>new Date().getFullYear()>2016&&document.write("-"+new Date().getFullYear());</script> FRAEM. All rights reserved.
+    </footer>
        
 
     
