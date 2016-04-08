@@ -24,12 +24,14 @@
     <!-- Google Einbindunen -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
+    <script src="js/parallax.min.js"></script>
 
         <script src="js/responsive-nav.js"></script>
     
     <script type="text/javascript">  $(function(){
             $(".player").mb_YTPlayer();
         });
+        
     </script>
 </head>
 <body>
@@ -87,10 +89,12 @@
 <!--</div>-->
     
 <!-- start section team -->
-    
+
+<div class="parallax-window" data-parallax="scroll" data-image-src="img/gang.jpg"><h1 class="heading">TEAM</h1></div>    
+
 <section id="team">
+    <!--<h1 class="headline">Team</h1>-->
     
-    <h1 class="headline">Team</h1>
     
     <div class="content">
 
@@ -189,7 +193,8 @@
     
 <section id="service">
     
-    <h1 class="headline">Services</h1>
+    <!--<h1 class="headline">Services</h1>-->
+    <div class="parallax-window" data-parallax="scroll" data-image-src="img/service.jpg"><h1 class="heading">SERVICES</h1></div>
     
     <div class="content">
         
@@ -284,6 +289,5 @@
     <script src="js/plugins.js" type="text/javascript"></script> <!-- various plugins js -->
     <script type="text/javascript" src="js/custom.js"></script>
     <script src="js/fixed-responsive-nav.js"></script>
-
   </body>
 </html>
