@@ -3,6 +3,8 @@ $nav-color: #1D1D1D;
 $link-color: #4086AA;
 $white_80: rgba(255,255,255,0.8);
 $white: #fff; 
+$light_gray: #ccc;
+$lighter_gray: #f2f2f2;
 
 @mixin vertical-align {
   position: relative;
@@ -23,7 +25,7 @@ h1{
     letter-spacing: 3px;
 }
 
-nav{
+/*nav{
     position: fixed;
 	top: 0;
 	left: 0;
@@ -48,7 +50,7 @@ nav{
     a:hover{
         color: $link-color;
     }
-}
+}*/
 
 .noBackground{
     display: none;
@@ -56,8 +58,9 @@ nav{
 }
 
 .blackBackground {
-	background: $nav-color;
+	background: $white;
     opacity: 0.95;
+    box-shadow: 1px 1px 6px #5A5A5A;
 }
 
 h2.subtitle {
@@ -243,4 +246,86 @@ ul.social-team {
 .player {
     position: relative;
     z-index: 9999;
+}
+
+/* ==============================================
+    Services Section
+=============================================== */
+
+.process:hover .process-hover{
+    background:$link-color;
+}
+.process {
+    text-align: center;
+    background: $lighter_gray;
+    cursor: pointer;
+    padding-bottom: 110px;
+    position: relative;
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 4px;
+    //overflow: ;
+    i {
+        margin-top: 30px;
+        color: $light_gray;
+    }
+    h3 {
+        font-size: 1.6rem;
+        //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+        transition: all 0.3s ease 0.1s;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        span {
+            font-size: 2rem;
+            display: block;
+            color: $link-color;
+        }
+    }
+    &:hover {
+        background: $link-color;
+        h3 {
+            color: $white;
+            margin-top: -110px;
+            //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+            transition: opacity .3s .2s, margin-top .4s .2s;
+        }
+        .process-hover {
+            visibility: visible;
+        }
+        p {
+            margin-top: -135px;
+            //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+            transition: opacity .3s .2s, margin-top .6s .2s;
+            opacity: 1;
+        }
+    }
+    p {
+        color: $white;
+        //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+        transition: all 0.3s ease 0.1s;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        padding: 0 20px;
+        text-align: center;
+        opacity: 0;
+    }
+}
+.process-hover {
+    background: $link-color; 
+    //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: background .4s ease;
+    background: rgba(255,255,255,0);
+    overflow: hidden;
+    filter: alpha(opacity=0);
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 4px;
+    webkit-border-radius: 4px;
+    o-border-radius: 4px;
+    visibility: hidden;
 }

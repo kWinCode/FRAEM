@@ -54,14 +54,14 @@ var header = $('.noBackground');
 	$(window).scroll(function() {
 		var scroll = $(window).scrollTop();
 
-		if (scroll >= 20) {
+		if (scroll >= 100) {
 			//header.removeClass('noBackground').addClass('blackBackground').fadeIn("slow");
-            $('nav').slideDown("slow").addClass('blackBackground').fadeIn("slow");
+            $('header').slideDown(300).addClass('blackBackground');
 		} else {
 			//header.removeClass('blackBackground').fadeOut("slow").addClass('noBackground');
-            $('nav').slideUp("slow").fadeOut("slow");
-		}
-	});
+            $('header').slideUp(300);
+	   }
+    });
     
 });
 /* end ready function */

@@ -6,31 +6,40 @@ h1 {
   margin-top: 5%;
   letter-spacing: 3px; }
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 1%;
-  z-index: 100;
-  color: white;
-  text-align: right; }
-  nav ul {
-    list-style: none; }
-  nav li {
-    display: inline; }
-  nav a {
-    color: #D1D1D1; }
-  nav a:hover {
-    color: #4086AA; }
-
+/*nav{
+    position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 1%;
+	z-index: 100;
+	color: white;
+	text-align: right;
+    
+    ul{
+        list-style: none;
+    }
+    
+    li{
+        display: inline;
+    }
+    
+    a{
+        color: $background-color;
+    }
+    
+    a:hover{
+        color: $link-color;
+    }
+}*/
 .noBackground {
   display: none;
   background-color: none; }
 
 .blackBackground {
-  background: #1D1D1D;
-  opacity: 0.95; }
+  background: #fff;
+  opacity: 0.95;
+  box-shadow: 1px 1px 6px #5A5A5A; }
 
 h2.subtitle {
   font-size: 1.6875rem;
@@ -185,5 +194,69 @@ ul.social-team {
 .player {
   position: relative;
   z-index: 9999; }
+
+/* ==============================================
+    Services Section
+=============================================== */
+.process:hover .process-hover {
+  background: #4086AA; }
+
+.process {
+  text-align: center;
+  background: #f2f2f2;
+  cursor: pointer;
+  padding-bottom: 110px;
+  position: relative;
+  border-radius: 4px; }
+  .process i {
+    margin-top: 30px;
+    color: #ccc; }
+  .process h3 {
+    font-size: 1.6rem;
+    transition: all 0.3s ease 0.1s;
+    position: absolute;
+    width: 100%;
+    text-align: center; }
+    .process h3 span {
+      font-size: 2rem;
+      display: block;
+      color: #4086AA; }
+  .process:hover {
+    background: #4086AA; }
+    .process:hover h3 {
+      color: #fff;
+      margin-top: -110px;
+      transition: opacity .3s .2s, margin-top .4s .2s; }
+    .process:hover .process-hover {
+      visibility: visible; }
+    .process:hover p {
+      margin-top: -135px;
+      transition: opacity .3s .2s, margin-top .6s .2s;
+      opacity: 1; }
+  .process p {
+    color: #fff;
+    transition: all 0.3s ease 0.1s;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+    opacity: 0; }
+
+.process-hover {
+  background: #4086AA;
+  transition: background .4s ease;
+  background: rgba(255, 255, 255, 0);
+  overflow: hidden;
+  filter: alpha(opacity=0);
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: 4px;
+  webkit-border-radius: 4px;
+  o-border-radius: 4px;
+  visibility: hidden; }
 
 /*# sourceMappingURL=style.css.map */

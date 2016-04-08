@@ -8,7 +8,9 @@
 
     <!-- css files -->
 
+    <link rel="stylesheet" href="css/responsive-nav.css">
     
+
     
     <link rel="stylesheet" type="text/css" href="css/settings.css" media="screen" />
     <link rel="stylesheet" href="css/foundation.css">
@@ -23,6 +25,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
 
+        <script src="js/responsive-nav.js"></script>
+    
     <script type="text/javascript">  $(function(){
             $(".player").mb_YTPlayer();
         });
@@ -38,7 +42,7 @@
     
     <!--/Preloader -->
 
-<nav class="noBackground">
+<!--<nav class="noBackground">
     <ul data-magellan>
         <li><a href="#home">Home</a></li>
         <li><a href="#team">Team</a></li>
@@ -46,13 +50,27 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
-</nav>
+</nav>-->
+    
+<header class="noBackground">
+      <a href="#home" class="logo"><img src="css/img/FRAEM_LOGO_Schwarz_Nav.png" style="width:100px;" onmouseover="this.src='css/img/FRAEM_LOGO_Blau_Nav.png'" onmouseout="this.src='css/img/FRAEM_LOGO_Schwarz_Nav.png'"/></a>
+      <nav class="nav-collapse">
+        <ul data-magellan>
+          <li class="menu-item"><a href="#home">Home</a></li>
+          <li class="menu-item"><a href="#team">Team</a></li>
+          <li class="menu-item"><a href="#service">Services</a></li>
+          <li class="menu-item"><a href="#projects">Projects</a></li>
+          <li class="menu-item"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
     
 <!-- HEADER-BEREICH -->
     
   <!-- <div id="header"><img src="css/img/logo-sample.png" id="logo" class="animated fadeInDownBig"/></div>-->
     
     <!--<div class="content">-->
+<section id="home"></section>
 <section id="video-section">
   <div id="video-box"></div>
   <!-- Video overlay -->
@@ -155,33 +173,69 @@
 
 <!-- START SERVICES -->
     
-    <section id="service"></section>
-    <h1 class="headline">Service</h1>
-      
+    <!-- START SERVICES -->
+    
+<section id="service">
+    
+    <h1 class="headline">Services</h1>
+    
     <div class="content">
         
-        <div class="row">
-            <div class="large-4 medium-6 small-12 columns">
-                <div class="primary callout" style="text-align:center; background-color: #D1D1D1">
-                    <i class="fa fa-video-camera fa-5x"></i>
-                    <p>Imagemovies</p>
-                </div>
-            </div>
-            <div class="large-4 medium-6 small-12 columns">
-                <div class="primary callout" style="text-align:center; background-color: #D1D1D1">
-                    <i class="fa fa-camera-retro fa-5x"></i>
-                    <p>Photography</p>
-                </div>
-            </div>
-            <div class="large-4 medium-6 small-12 columns">
-                <div class="primary callout" style="text-align:center; background-color: #D1D1D1">
-                    <i class="fa fa-clock-o fa-5x"></i>
-                    <p>Timelapse</p>
-                </div>
-            </div>
+    <div class="row">
+    <div class="large-12 columns">
+      
+      <!-- start process -->
+      <div class="large-3 medium-3 columns"> 
+        <div class="process">
+          <div class="process-hover">
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+          </div>
+          <i class="fa fa-video-camera fa-5x"></i>
+          <h3><span>I</span>Imagevideos</h3>
+        </div>         
+      </div>
+      <!-- end process -->
+
+      <!-- start process -->
+      <div class="large-3 medium-3 columns">         
+        <div class="process">
+          <div class="process-hover">
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+          </div>
+          <i class="fa fa-clock-o fa-5x"></i>
+          <h3><span>II</span>Timelapse</h3>
+        </div>         
+      </div>
+      <!-- end process -->
+
+      <!-- start process -->
+      <div class="large-3 medium-3 columns">         
+        <div class="process">
+          <div class="process-hover">
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+          </div>
+          <i class="fa fa-code fa-5x"></i>
+          <h3><span>III</span>Web Development</h3>
+        </div>         
+      </div>
+      <!-- end process -->
+
+      <!-- start process -->
+      <div class="large-3 medium-3 columns">         
+        <div class="process">
+          <div class="process-hover">
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+          </div>
+          <i class="fa fa-keyboard-o fa-5x"></i>
+          <h3><span>IV</span>Programming</h3>
+        </div>         
+      </div>
         </div>
-        
+      <!-- end process -->
+
     </div>
+  </div>
+</section>
     
     
     <!-- PORTFOLIO-BEREICH -->  
@@ -195,7 +249,7 @@
     
     
     <!-- CONTACT-BEREICH -->
-    <section id="projects"></section>
+    <section id="contact"></section>
     <h1 class="headline">Contact</h1>
     
     <div class="content">
@@ -217,6 +271,7 @@
     <script src="js/app.js"></script>
     <script src="js/plugins.js" type="text/javascript"></script> <!-- various plugins js -->
     <script type="text/javascript" src="js/custom.js"></script>
+    <script src="js/fixed-responsive-nav.js"></script>
 
   </body>
 </html>
