@@ -16,8 +16,49 @@ jQuery(document).ready(function ($) {
 
 /* ==============================================
     variable screen height
-=============================================== */  
+=============================================== */ 
 
+ 
+/* ==============================================
+    Contact Form
+=============================================== */
+$(function () {
+    $("#contact .submit-button").click(function () {
+        var name = $("#name").val();
+        var email = $("#email").val();
+        var text = $("#text").val();
+        var dataString = 'name=' + name + '&email=' + email + '&text=' + text;
+        if (name == '') {
+            $('#name').css({
+                'background-color': '#FAFFBD'
+            });
+        } else {
+            if (email == '') {
+                $('#email').css({
+                    'background-color': '#FAFFBD'
+                });
+            } else {
+                if (text == '') {
+                    $('#text').css({
+                        'background-color':'#FAFFBD'
+                        
+                    });
+                    
+                } else {
+                    $.ajax({
+                        type: "POST",
+                        url: "mail.php",
+                        data: dataString,
+                        success: function () {
+                            $('#form-sent').fadeIn(1000);
+                        }
+                    });
+                }
+            }
+        }
+        return false;
+    });
+});
 /* ==============================================
 	Video Player
 =============================================== */	
@@ -25,7 +66,8 @@ $(function(){
     $(".player").mb_YTPlayer();
   });
 
-
+});
+/* end ready function */
 /* ==============================================
 	img Hover
 =============================================== */	
@@ -66,6 +108,53 @@ var header = $('.noBackground');
             $('header').slideUp(300);
 	   }
     });
+
+
+
+
+
     
-});
-/* end ready function */
+
+
+
+/* ==============================================
+  Parallax Sections
+=============================================== */
+( function ( $ ) {
+'use strict';
+$(document).ready(function(){
+$(window).bind('load', function () {
+    parallaxInit();             
+  });
+  function parallaxInit() {
+    testMobile = isMobile.any();
+    if (testMobile == null)
+    {
+  $('.responsive-parallax').parallax("50%", 0.4);
+    }
+  } 
+  parallaxInit();  
+}); 
+//Mobile Detect
+var testMobile;
+var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {     
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
+}( jQuery ));

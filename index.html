@@ -66,7 +66,7 @@
           <li class="menu-item"><a href="#team">Team</a></li>
           <li class="menu-item"><a href="#service">Services</a></li>
           <li class="menu-item"><a href="#projects">Projects</a></li>
-          <li class="menu-item"><a href="#contact">Contact</a></li>
+          <li class="menu-item"><a href="#contacts">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -91,10 +91,10 @@
 <!--</div>-->
     
 <!-- start section team -->
-
+<section id="team">
 <div class="parallax-window" data-parallax="scroll" data-image-src="img/gang.jpg"><h1 class="heading">TEAM</h1></div>    
 
-<section id="team">
+
 <!--<h1 class="headline">Team</h1>-->
     
     
@@ -270,13 +270,56 @@
     </div>
     
     
-    <!-- CONTACT-BEREICH -->
-    <section id="contact"></section>
-    <h1 class="headline">Contact</h1>
-    
-    <div class="content">
-        <p style="text-align:center">Future Content goes here.</p>
+<!-- start parallax -->
+<div class="parallax responsive-parallax">
+
+  <!-- start contacts section -->
+  <section id="contacts" >
+    <div class="row">
+      <div class="large-12 columns">
+        <h1 class="title-section bold white"><span class="nbr">05.</span>Contact <span class="border"></span> </h1>
+        <h2 class="subtitle-section white">Phasellus enim libero, blandit vel sapien vitae.<br>
+          Aliquam in tortor enim.</h2>
+      </div>
+      <div class="large-6 medium-6 columns text-left">
+        <h4 class="white bold">Get in Touch</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius. In eu ipsum vitae velit congue iaculis vitae.<br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+          <br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        </p>
+        <h4 class="white bold">Visit Us</h4>
+        <ul class="contact-detail">
+          <li><strong><i class="fa fa-map-marker"></i> Address: </strong>1234 Street Name, City Name, Austria</li>
+          <li><strong><i class="fa fa-phone"></i> Phone: </strong>+43 123 456789</li>
+          <li><strong><i class="fa fa-envelope"></i> Email: </strong><a href="#" title="">kevin.pirner@live.at</a></li>
+          <li><strong>Social Networks: </strong> <a href="#" title="facebook"><i class="fa fa-facebook"></i></a> <a href="#" title="twitter"><i class="fa fa-twitter"></i></a> <a href="#" title="google plus"><i class="fa fa-google-plus"></i></a> <a href="#" title="pinterest"><i class="fa fa-pinterest"></i></a> </li>
+        </ul>
+      </div>
+      <div class="large-6  medium-6 columns text-left">
+        <h4 class="white bold">Drop us a line</h4>
+        
+        <!-- start contact form -->
+        <form class="contactForm form" id="contact" method="post">
+          <label>Name:</label>
+          <input name="name" id="name" type="text">
+          <label>Email:</label>
+          <input name="email" id="email" type="text">
+          <label>Message:</label>
+          <textarea  name="text" id="text"></textarea>
+          <input type="submit" value="Send" name="submit" class="submit-button">
+          <div id="form-sent">
+            <p class="white">Thanks for your enquiry!</p>
+          </div>
+        </form>
+        <!-- end contact form -->
+        
+      </div>
     </div>
+  </section>
+  <!-- end contacts section -->
+</div>
+<!-- end parallax -->
       
     <!-- FOOTER-BEREICH -->
       
