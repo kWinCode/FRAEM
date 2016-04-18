@@ -204,7 +204,8 @@ ul.social-team {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  margin-bottom: 5%; }
 
 .container .textbox {
   position: absolute;
@@ -226,6 +227,9 @@ ul.social-team {
 .container .firstIMG, .textbox {
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease; }
+
+.description {
+  text-align: justify; }
 
 /* ==============================================
     Video Section
