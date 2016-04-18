@@ -216,7 +216,8 @@ header {
 
 .nav-collapse a:active,
 .nav-collapse .active a {
-  background: #D1D1D1;
+  background: #4086AA;
+  color: #fff;
 }
 
 @media screen and (min-width: 40em) {
@@ -270,7 +271,7 @@ header {
 }
 
 .nav-toggle:before {
-  color: #fff; /* Edit this to change the icon color */
+  color: #1D1D1D; /* Edit this to change the icon color */
   font: normal 28px/55px "responsivenav"; /* Edit font-size (28px) to change the icon size */
   text-transform: none;
   text-align: center;

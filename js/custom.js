@@ -68,35 +68,13 @@ $(function(){
 
 });
 /* end ready function */
-/* ==============================================
-	img Hover
-=============================================== */	
-
-$('#one').mouseover(function() {
-
-    // increase the 500 to larger values to lengthen the duration of the fadeout 
-       // and/or fadein
-    $('#one').fadeOut(500, function() {
-        $('#one').attr("src","img/derboy.png");
-        $('#one').fadeIn(500);
-    });
-
-});
-
-$('#one').mouseout(function() {
-
-    // increase the 500 to larger values to lengthen the duration of the fadeout 
-       // and/or fadein
-    $('#one').fadeOut(500, function() {
-        $('#one').attr("src","img/portrait-sample.gif");
-        $('#one').fadeIn(500);
-    });
-
-});
 
 // NAVIGATION SLIDE IN EFFECT
     
-var header = $('.noBackground');
+if ( $(window).width() <= 640){
+        $('header').removeClass('noBackground').addClass('blackBackground');
+    } else if($(window).width() > 640){
+
 	$(window).scroll(function() {
 		var scroll = $(window).scrollTop();
 
@@ -108,6 +86,7 @@ var header = $('.noBackground');
             $('header').slideUp(300);
 	   }
     });
+        }
 
 
 /* ==============================================
