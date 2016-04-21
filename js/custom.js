@@ -2,8 +2,8 @@
 	Page Preloader
 =============================================== */
 $(window).load(function() { 
-	$("#loader").delay(500).fadeOut(); 
-	$(".mask").delay(1000).fadeOut("slow");
+    $("#loader").delay(500).fadeOut(); 
+    $(".mask").delay(1000).fadeOut("slow");
 });
 
 
@@ -13,6 +13,7 @@ $(window).load(function() {
 jQuery(document).ready(function ($) { 
 
 'use strict';
+
 
 /* ==============================================
     variable screen height
