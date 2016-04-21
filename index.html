@@ -53,6 +53,7 @@
 </nav>-->
     
 <header class="noBackground">
+    <div id="screen-nav">
       <a href="#home" class="logo"><img src="css/img/FRAEM_LOGO_Schwarz_Nav.png" style="width:100px;" onmouseover="this.src='css/img/FRAEM_LOGO_Blau_Nav.png'" onmouseout="this.src='css/img/FRAEM_LOGO_Schwarz_Nav.png'"/></a>
       <nav class="nav-collapse">
         <ul data-magellan>
@@ -63,6 +64,7 @@
           <li class="menu-item"><a href="#contacts">Contact</a></li>
         </ul>
       </nav>
+    </div>
     </header>
     
 <!-- HEADER-BEREICH -->
@@ -87,10 +89,10 @@
 
 </section>
 <!--</div>-->
-    
+
 <!-- start section team -->
 <section class="target" id="team">
-<div class="parallax-window" data-parallax="scroll" data-image-src="img/gang.jpg"><h1 class="heading">TEAM</h1></div>    
+<div class="parallax-window" data-parallax="scroll" data-image-src="img/section-heading.png"><h1 class="heading">TEAM</h1></div>    
 
 
 <!--<h1 class="headline">Team</h1>-->
@@ -218,7 +220,7 @@
 <section class="target" id="service">
     
     <!--<h1 class="headline">Services</h1>-->
-    <div class="parallax-window" data-parallax="scroll" data-image-src="img/service.jpg"><h1 class="heading">SERVICES</h1></div>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="img/section-heading.png"><h1 class="heading">SERVICES</h1></div>
     
     <div class="content">
         
@@ -285,7 +287,7 @@
     <!-- PORTFOLIO-BEREICH -->  
     
     <section class="target" id="projects">
-    <h1 class="headline">Projects</h1>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="img/section-heading.png"><h1 class="heading">PROJECTS</h1></div>
       
     <div class="content">
            
@@ -362,7 +364,7 @@
   <section class="target" id="contacts" >
     <div class="row">
       <div class="large-12 columns">
-        <h1 class="title-section bold white"><span class="nbr">05.</span>Contact <span class="border"></span> </h1>
+        <h1 class="title-section bold white">Contact <span class="border"></span> </h1>
         <h2 class="subtitle-section white">Phasellus enim libero, blandit vel sapien vitae.<br>
           Aliquam in tortor enim.</h2>
       </div>
@@ -409,7 +411,15 @@
     <!-- FOOTER-BEREICH -->
       
     <footer>
-        &copy;2016<script>new Date().getFullYear()>2016&&document.write("-"+new Date().getFullYear());</script> FRAEM. All rights reserved.
+        <div id="footer-area">
+            <div id="copyright">
+                &copy; 2016<script>new Date().getFullYear()>2016&&document.write("-"+new Date().getFullYear());</script> FRAEM. All rights reserved.
+            </div>
+            <div id="madeby">
+                Website made by <br>
+                <a href="http://www.js-coding.at" target="_blank">Johannes Schick</a> & <a href="http://mt141068.students.fhstp.ac.at/sem3/wpf/" target="_blank">Kevin Pirner</a>
+            </div>
+        </div>
     </footer>
        
 
