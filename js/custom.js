@@ -19,7 +19,7 @@ jQuery(document).ready(function ($) {
     variable screen height
 =============================================== */ 
       function getHeight() {
-        var x = screen.height-280 + "px";
+        var x =  $(window).height()-175 + "px";
         document.getElementById("header").style.height =x;
       }
       window.onload = getHeight;
