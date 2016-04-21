@@ -17,7 +17,11 @@ jQuery(document).ready(function ($) {
 /* ==============================================
     variable screen height
 =============================================== */ 
-
+      function getHeight() {
+        var x = screen.height-280 + "px";
+        document.getElementById("header").style.height =x;
+      }
+      window.onload = getHeight;
  
 /* ==============================================
     Contact Form
@@ -59,15 +63,7 @@ $(function () {
         return false;
     });
 });
-/* ==============================================
-	Video Player
-=============================================== */	
-$(function(){
-    $(".player").mb_YTPlayer();
-  });
 
-});
-/* end ready function */
 
 // NAVIGATION SLIDE IN EFFECT
     
@@ -75,16 +71,16 @@ if ( $(window).width() <= 640){
         $('header').removeClass('noBackground').addClass('blackBackground');
     } else if($(window).width() > 640){
 
-	$(window).scroll(function() {
-		var scroll = $(window).scrollTop();
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
 
-		if (scroll >= 100) {
-			//header.removeClass('noBackground').addClass('blackBackground').fadeIn("slow");
+        if (scroll >= 100) {
+            //header.removeClass('noBackground').addClass('blackBackground').fadeIn("slow");
             $('header').slideDown(300).addClass('blackBackground');
-		} else {
-			//header.removeClass('blackBackground').fadeOut("slow").addClass('noBackground');
+        } else {
+            //header.removeClass('blackBackground').fadeOut("slow").addClass('noBackground');
             $('header').slideUp(300);
-	   }
+       }
     });
         }
 
@@ -92,44 +88,44 @@ if ( $(window).width() <= 640){
 /* ==============================================
   PROJECTS SECTION
 =============================================== */
-	
-	var filterList = {
-	
-		init: function () {
-		
-			// MixItUp plugin
-			// http://mixitup.io
-			$('#portfoliolist').mixitup({
-				targetSelector: '.portfolio',
-				filterSelector: '.filter',
-				effects: ['fade'],
-				easing: 'snap',
-				// call the hover effect
-				//onMixEnd: filterList.hoverEffect()
-			});				
-		
-		},
-		
-		hoverEffect: function () {
-		
-			// Simple parallax effect
-			$('#portfoliolist .portfolio').hover(
-				function () {
-					$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
-					$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
-				},
-				function () {
-					$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
-					$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
-				}		
-			);				
-		
-		}
+    
+    var filterList = {
+    
+        init: function () {
+        
+            // MixItUp plugin
+            // http://mixitup.io
+            $('#portfoliolist').mixitup({
+                targetSelector: '.portfolio',
+                filterSelector: '.filter',
+                effects: ['fade'],
+                easing: 'snap',
+                // call the hover effect
+                //onMixEnd: filterList.hoverEffect()
+            });             
+        
+        },
+        
+        hoverEffect: function () {
+        
+            // Simple parallax effect
+            $('#portfoliolist .portfolio').hover(
+                function () {
+                    $(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+                    $(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');             
+                },
+                function () {
+                    $(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+                    $(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');                               
+                }       
+            );              
+        
+        }
 
-	};
-	
-	// Run the show!
-	filterList.init();	
+    };
+    
+    // Run the show!
+    filterList.init();  
 
 /* ==============================================
   OUR CLIENTS
@@ -155,6 +151,18 @@ $('.owl-carousel').owlCarousel({
     }
   }
 });
+
+/* ==============================================
+	Video Player
+=============================================== */	
+$(function(){
+    $(".player").mb_YTPlayer();
+  });
+
+});
+/* end ready function */
+
+
     
 
 
