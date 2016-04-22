@@ -157,8 +157,13 @@ footer{
 }
 
 #slogan{
-    margin: 10% 2% 10% 2%;
+    padding: 10% 2% 10% 2%;
     text-align: center;
+    /*background: #fff; /* For browsers that do not support gradients */
+    /*background: -webkit-linear-gradient(#fff, #d1d1d1); /* For Safari 5.1 to 6.0 */
+    /*background: -o-linear-gradient(#fff, #000); /* For Opera 11.1 to 12.0 */
+    /*background: -moz-linear-gradient(#fff, #d1d1d1); /* For Firefox 3.6 to 15 */
+    /*background: linear-gradient(#fff, #d1d1d1); /* Standard syntax */
     
     h1{
         font-family: 'Homemade Apple', cursive;
@@ -454,6 +459,7 @@ iframe{
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
     max-width: 560px;
+    max-height: 315px;
     width: 100%;
 	margin:1%;
 	display:none;
@@ -471,7 +477,16 @@ iframe{
 	.portfolio img {
 		max-width:100%;
 		position: relative;
+        -webkit-transition: all 0.7s ease;
+        transition: all 0.7s ease;
 	}
+
+    .portfolio img:hover{
+        -webkit-transition: all 0.7s ease;
+        transition: all 0.7s ease;
+        -webkit-transform:scale(1.3);
+        transform:scale(1.3);
+    }
 	
 	.portfolio .label {
 		position: absolute;
@@ -501,6 +516,9 @@ iframe{
 				font-size:9px;
 			}
 
+.hidden {
+    display: none;
+}
 
 /* ==============================================
     Services Section

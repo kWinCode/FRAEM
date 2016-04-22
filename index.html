@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="css/owl-theme-default.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive-nav.css">
+    <link rel="stylesheet" href="css/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+    
     
     
       
@@ -29,11 +31,20 @@
     <!-- Test Font for Slogan Heading -->
     <link href='https://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/responsive-nav.js"></script>
     
+    <script type="text/javascript">
+        $(document).ready(function() {
+	$(".fancybox").fancybox({
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+});
         
+    </script>
+    
 
 </head>
 <body>
@@ -312,16 +323,18 @@
                             </div>
                         </div>
                     </div>
-                    
-
-                   
+                
                     <div class="portfolio photo" data-cat="photo">
                         <div class="portfolio-wrapper">
-                            <div class="embed-container">	
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/RU8lY8-fkdw" frameborder="0" allowfullscreen></iframe>
+                            <a class="fancybox" rel="gallery1" href="img/team/Fun_Max.png"><img src="img/section/6.png" alt="" /></a>
+                            <div class="hidden">
+                                <a class="fancybox" rel="gallery1" href="img/team/Fun_Elias.png"></a>
+                                <a class="fancybox" rel="gallery1" href="img/team/Fun_Fabian.png"></a>
                             </div>
                         </div>
                     </div>
+
+
                     
 
                 </div>
@@ -434,10 +447,12 @@
     <script src="js/plugins.js" type="text/javascript"></script> <!-- various plugins js -->
     <script type="text/javascript" src="js/jquery.easing.min.js"></script>
     <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-
     <script src="js/fastclick.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/fixed-responsive-nav.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+    
+    
   </body>
 </html>
