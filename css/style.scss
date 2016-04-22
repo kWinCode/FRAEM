@@ -127,6 +127,10 @@ footer{
     color: $background-color;
 }
 
+#down-arrow{
+    text-shadow: 1px 5px 5px #222;
+}
+
 #logo{
     @include vertical-align;
     margin: 0 auto;
@@ -150,7 +154,15 @@ footer{
 
 .content{
     margin: 5% 2% 5% 2%;
-    //background: #BDE3F0;
+}
+
+#slogan{
+    margin: 10% 2% 10% 2%;
+    text-align: center;
+    
+    h1{
+        font-family: 'Homemade Apple', cursive;
+    }
 }
 
 // Grid Style ohne Ränder und Hintergrund

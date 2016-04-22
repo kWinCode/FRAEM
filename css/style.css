@@ -84,6 +84,9 @@ footer {
 .fa {
   color: #D1D1D1; }
 
+#down-arrow {
+  text-shadow: 1px 5px 5px #222; }
+
 #logo {
   position: relative;
   top: 50%;
@@ -112,6 +115,12 @@ footer {
 
 .content {
   margin: 5% 2% 5% 2%; }
+
+#slogan {
+  margin: 10% 2% 10% 2%;
+  text-align: center; }
+  #slogan h1 {
+    font-family: 'Homemade Apple', cursive; }
 
 .callout {
   border: none;
