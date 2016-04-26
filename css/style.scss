@@ -1,3 +1,4 @@
+@charset "utf-8";
 //colors
 
 $background-color: #D1D1D1;
@@ -22,6 +23,35 @@ $url_contact: url(../img/section/4.png);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
+
+
+
+
+body {
+    overflow: hidden;
+}
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $white;
+    z-index: 99;
+}
+#status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url(../img/96.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+}
+
 
 body{
     //background: $background-color;
@@ -197,29 +227,6 @@ footer{
     -moz-box-shadow:    inset 0 0 10px #000000;
    -webkit-box-shadow: inset 0 0 10px #000000;
    box-shadow:         inset 0 0 10px #000000;
-}
-
-
-/* ==============================================
-    Preloader
-=============================================== */
-
-.mask {
-    background-color: $white;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: 100000;
-}
-#loader {
-    background: url(../img/loader.gif) center center no-repeat;
-    height: 31px;
-    width: 31px;
-    left: 50%;
-    top: 50%;
-    position: absolute;
-    z-index: 100001;
-    margin: -15px 0 0 -15px;
 }
 
 
