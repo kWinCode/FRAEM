@@ -80,16 +80,15 @@
     
 <!-- HEADER-BEREICH -->
     
-<section id="home"></section>
-<section id="video-section">
+<section id="home">
   <div id="video-box"></div>
-  <!-- Video overlay -->
-  <div class="overlay"></div>
+ 
 
   <div id="header"><img src="css/img/FRAEM_LOGO_Weiss_red.png" id="logo" class="animated fadeInDownBig"/></div>
   
+<!-- Easy as hell -->
+<div id="block" style="width: 100%; " data-vide-bg="video/ocean" data-vide-options="position: 0% 50%"></div>
 
-    <a id="video" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=WOtAj4YYdgk',containment:'#video-box', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, addRaster:false, quality:'highres'}">My video</a>
     
     <span data-magellan>
         <a href="#team"><i class="fa fa-angle-down fa-5x arrow bounce" id="down-arrow"></i></a>
@@ -427,7 +426,7 @@
 
     
     <script src="js/vendor/jquery.js"></script>
-    <script type="text/javascript" src="js/jquery.mb.ytplayer.js"></script> <!-- video background js -->
+    <script type="text/javascript" src="js/jquery.vide.js"></script> <!-- video background js -->
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
@@ -440,6 +439,7 @@
     <script src="js/fixed-responsive-nav.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+    
     <!-- Preloader -->
 <script type="text/javascript">
   //<![CDATA[

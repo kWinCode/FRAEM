@@ -5,10 +5,15 @@
     variable screen height
 =============================================== */ 
       function getHeight() {
-        var x =  $(window).height()-150 + "px";
+        var x =  $(window).height()-170 + "px";
+        var y =  $(window).height() + "px";
         document.getElementById("header").style.height =x;
+        document.getElementById("block").style.height = y;
       }
       window.onload = getHeight;
+
+
+
  
 /* ==============================================
     Contact Form
