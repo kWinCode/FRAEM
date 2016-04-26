@@ -117,7 +117,22 @@
   display: block;
   width: 100%;
   -webkit-transform-style: preserve-3d;
+    -webkit-filter: grayscale(100%);
+       -moz-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+            filter: grayscale(100%);
 }
+
+.owl-carousel .owl-item img:hover {
+    -webkit-filter: grayscale(0%);
+       -moz-filter: grayscale(0%);
+         -o-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+            filter: grayscale(0%);
+}
+
+
 .owl-carousel.owl-text-select-on .owl-item {
   -webkit-user-select: auto;
   -moz-user-select: auto;
