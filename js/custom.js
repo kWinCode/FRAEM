@@ -1,5 +1,26 @@
+/* ==============================================
+    Preloader
+=============================================== */ 
+$(window).load(function() { // makes sure the whole site is loaded
+      $('#status').fadeOut(); // will first fade out the loading animation
+      $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+      $('body').delay(350).css({'overflow':'visible'});
+    });
 
 
+
+jQuery(document).ready(function($){
+
+'use strict';
+
+
+        //(document).ready(function() {
+        //$(function(){
+    $(".fancybox").fancybox({
+        openEffect  : 'none',
+        closeEffect : 'none'
+    });
+//});
 
 /* ==============================================
     variable screen height
@@ -154,6 +175,9 @@ $(function(){
 
 
 
+/*End ready function*/
+});
+
 
 /* ==============================================
   Parallax Sections
@@ -196,3 +220,6 @@ var isMobile = {
     }
 };
 }( jQuery ));
+
+
+
