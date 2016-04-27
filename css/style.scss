@@ -177,6 +177,28 @@ footer{
     text-align: center;
 }
 
+.headline:before, .headline:after{
+        background: $nav-color;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 30%;
+    }
+
+.headline:before{
+        right: 0.5em;
+        margin-left: -50%;
+        background: linear-gradient(to left, $nav-color , #fff);
+    }
+
+.headline:after{
+        left: 0.5em;
+        margin-right: -50%;
+        background: linear-gradient(to right, $nav-color , #fff);
+    }
+
 .heading{
     @include vertical-align;
     color: #fff;

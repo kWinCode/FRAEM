@@ -128,6 +128,25 @@ footer {
 .headline {
   text-align: center; }
 
+.headline:before, .headline:after {
+  background: #1D1D1D;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 30%; }
+
+.headline:before {
+  right: 0.5em;
+  margin-left: -50%;
+  background: linear-gradient(to left, #1D1D1D, #fff); }
+
+.headline:after {
+  left: 0.5em;
+  margin-right: -50%;
+  background: linear-gradient(to right, #1D1D1D, #fff); }
+
 .heading {
   position: relative;
   top: 50%;
