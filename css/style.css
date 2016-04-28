@@ -451,6 +451,16 @@ iframe {
 .hidden {
   display: none; }
 
+.button {
+  background-color: #cd201f; }
+
+.button:hover, .button:focus {
+  background-color: #b61e1d; }
+
+#youtube {
+  margin-top: 5%;
+  text-align: center; }
+
 /* ==============================================
     Services Section
 =============================================== */
