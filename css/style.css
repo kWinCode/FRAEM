@@ -132,10 +132,10 @@ footer {
   background: #1D1D1D;
   content: "";
   display: inline-block;
-  height: 1px;
+  height: 2px;
   position: relative;
   vertical-align: middle;
-  width: 30%; }
+  width: 40%; }
 
 .headline:before {
   right: 0.5em;
@@ -460,6 +460,33 @@ iframe {
 #youtube {
   margin-top: 5%;
   text-align: center; }
+
+/* ==============================================
+    Clients Section
+=============================================== */
+.item {
+  margin: 0 5%; }
+
+#clients-round {
+  color: #fff;
+  width: 150px;
+  height: 150px;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+  background-color: #1D1D1D;
+  text-align: center;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle; }
+  #clients-round p {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    font-size: 1.5em; }
 
 /* ==============================================
     Services Section
