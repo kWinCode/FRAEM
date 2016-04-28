@@ -32,6 +32,7 @@ jQuery(document).ready(function($){
         document.getElementById("block").style.height = y;
       }
       window.onload = getHeight;
+      window.onresize = getHeight;
 
 
 
