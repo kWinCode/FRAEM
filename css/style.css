@@ -184,6 +184,15 @@ footer {
   -webkit-animation-fill-mode: none !important;
   animation-fill-mode: none !important; }
 
+body.de :lang(en) {
+  display: none; }
+
+body.en :lang(de) {
+  display: none; }
+
+#language {
+  padding: 15px; }
+
 /* ==============================================
     Parallax
 =============================================== */

@@ -23,6 +23,18 @@ jQuery(document).ready(function($){
 //});
 
 /* ==============================================
+    change language
+=============================================== */
+    
+$("#en").click(function(){
+  document.body.className = 'en';
+});
+
+$("#de").click(function(){
+  document.body.className = 'de';
+});
+            
+/* ==============================================
     variable screen height
 =============================================== */ 
       function getHeight() {
