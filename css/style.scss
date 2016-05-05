@@ -236,14 +236,29 @@ footer{
     margin: 5% 2% 5% 2%;
 }
 
+@media only screen and (max-width: 40.063em) {
+    
+    #home{
+        background-image: url('../video/ocean.jpg');
+        /*height: 400px;*/
+    }
+    
+    #block{
+        display: none;
+    }
+    
+    #logo{
+        width: 80%;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        top: 50%;
+    }
+}
+
 #slogan{
     padding: 10% 2% 10% 2%;
     text-align: center;
-    /*background: #fff; /* For browsers that do not support gradients */
-    /*background: -webkit-linear-gradient(#fff, #d1d1d1); /* For Safari 5.1 to 6.0 */
-    /*background: -o-linear-gradient(#fff, #000); /* For Opera 11.1 to 12.0 */
-    /*background: -moz-linear-gradient(#fff, #d1d1d1); /* For Firefox 3.6 to 15 */
-    /*background: linear-gradient(#fff, #d1d1d1); /* Standard syntax */
     
     h1{
         font-family: 'Homemade Apple', cursive;
@@ -297,6 +312,13 @@ body.en :lang(de){
    box-shadow:         inset 0 0 10px #000000;
 }
 
+@media only screen and (max-width: 40.063em) {
+    
+    .parallax-window{
+        height: 150px;
+    }
+}
+
 
 
 /* ==============================================
@@ -305,56 +327,14 @@ body.en :lang(de){
 
 .team {
     text-align: center;
-    h3 span {
+    h4 span {
         font-size: 1rem;
         font-weight: 400;
         display: block;
+        padding: 3% 0;
     }
 }
-.team-item {
-    position: relative;
-    margin: 0 auto 25px auto;
-    cursor: pointer;
-    img {
-        border-radius: 4px;
-    }
-    i {
-        margin-top: 100%;
-        display: block;
-        opacity: 0;
-        transition: all 0.3s ease 0.1s;
-    }
-    &:hover .team-hover {
-        background: $white_80;
-        filter: alpha(opacity=80);
-        i {
-            opacity: 1;
-            margin-top: 40%;
-            transition: opacity .3s .2s, margin-top .3s .2s;
-        }
-    }
-}
-.team-hover {
-    background-color: $nav-color;
-    transition: background .4s ease;
-    background: rgba(255,255,255,0);
-    overflow: hidden;
-    filter: alpha(opacity=0);
-    padding: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    border-radius: 4px;
-    a {
-        &:link {
-            font-weight: bold;
-        }
-        &:visited {
-            font-weight: bold;
-        }
-    }
-}
+
 ul.social-team {
     list-style: none;
     margin-bottom: 0;
@@ -367,6 +347,9 @@ ul.social-team {
             }
             &:hover {
                 color: $nav-color !important;
+            }
+            .fa:hover{
+                color: $link-color;
             }
         }
     }
@@ -435,9 +418,7 @@ ul.social-team {
     position: absolute;
     top: 0;
     left: 0;
-    
     height: 1000px;
-
 }
 
 .arrow {
@@ -617,7 +598,12 @@ iframe{
     right: 0;
     color: #fff;
     text-transform: uppercase;
+    
+    span{
+        font-weight: 800;
+    }
 }
+
 
 .effect-apollo:hover img {
 	opacity: 0.6;
@@ -790,6 +776,10 @@ iframe{
     webkit-border-radius: 4px;
     o-border-radius: 4px;
     visibility: hidden;
+}
+
+.service-panel{
+    margin: 5% 0;
 }
 
 /* ==============================================
