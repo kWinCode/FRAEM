@@ -13,14 +13,14 @@ jQuery(document).ready(function($){
 
 'use strict';
 
-
-        //(document).ready(function() {
-        //$(function(){
     $(".fancybox").fancybox({
-        openEffect  : 'none',
-        closeEffect : 'none'
+        padding: 0,
+        helpers: {
+        overlay: {
+        locked: false
+        }
+      }
     });
-//});
 
 /* ==============================================
     change language
