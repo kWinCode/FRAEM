@@ -1,7 +1,4 @@
-body {
-  overflow: hidden; }
-
-body, html {
+html {
   margin: 0; }
 
 #preloader {
@@ -25,12 +22,19 @@ body, html {
   margin: -100px 0 0 -100px; }
 
 body {
+  overflow: hidden;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: 'Lato' !important;
+  font-style: normal;
+  font-weight: 400; }
 
 h1 {
   margin-top: 5%;
-  letter-spacing: 3px; }
+  letter-spacing: 3px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400; }
 
 .noBackground {
   display: none;
@@ -243,9 +247,16 @@ body.en :lang(de) {
   text-align: center; }
   .team h4 span {
     font-size: 1rem;
+    font-family: 'Lato' !important;
+    font-style: normal;
     font-weight: 400;
     display: block;
     padding: 3% 0; }
+
+h4 {
+  font-family: 'Lato' !important;
+  font-style: normal;
+  font-weight: 400; }
 
 ul.social-team {
   list-style: none;
@@ -466,6 +477,9 @@ iframe {
   transition: opacity 0.35s; }
 
 .effect-apollo h2 {
+  font-family: 'Lato' !important;
+  font-style: normal;
+  font-weight: 400;
   position: absolute;
   text-align: left;
   top: 5%;
@@ -475,7 +489,7 @@ iframe {
   color: #fff;
   text-transform: uppercase; }
   .effect-apollo h2 span {
-    font-weight: 800; }
+    font-weight: 900; }
 
 .effect-apollo:hover img {
   opacity: 0.6;
@@ -571,6 +585,9 @@ iframe {
     color: #1D1D1D; }
   .process h3 {
     font-size: 1.6rem;
+    font-family: 'Lato' !important;
+    font-style: normal;
+    font-weight: 400;
     transition: all 0.3s ease 0.1s;
     position: absolute;
     width: 100%;
