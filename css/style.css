@@ -202,7 +202,9 @@ footer {
   padding: 10% 2% 10% 2%;
   text-align: center; }
   #slogan h1 {
-    font-family: 'Homemade Apple', cursive; }
+    font-family: 'Lato' !important;
+    font-style: normal;
+    font-weight: 100; }
 
 .callout {
   border: none;
