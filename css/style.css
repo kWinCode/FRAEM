@@ -179,7 +179,8 @@ footer {
   text-align: center;
   margin: 0 auto;
   text-shadow: 5px 5px 5px #222;
-  font-size: 4em; }
+  font-size: 4em;
+  text-transform: uppercase; }
 
 .content {
   margin: 5% 2% 5% 2%; }
@@ -198,13 +199,19 @@ footer {
     -ms-transform: none;
     transform: none;
     top: 50%; } }
+@font-face {
+  font-family: 'Across The Road';
+  src: url("Across_the_Road.ttf"); }
 #slogan {
   padding: 10% 2% 10% 2%;
   text-align: center; }
   #slogan h1 {
+    /*font-family: 'Homemade Apple', cursive;
     font-family: 'Lato' !important;
-    font-style: normal;
-    font-weight: 100; }
+    font-style: oblique;
+    font-weight: 300;*/
+    font-family: 'Across The Road';
+    font-size: 5rem; }
 
 .callout {
   border: none;
@@ -248,7 +255,7 @@ body.en :lang(de) {
 .team {
   text-align: center; }
   .team h4 span {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-family: 'Lato' !important;
     font-style: normal;
     font-weight: 400;
@@ -597,7 +604,7 @@ iframe {
     .process h3 span {
       font-size: 2rem;
       display: block;
-      color: #4086AA; }
+      color: #1D1D1D; }
   .process:hover {
     background: #4086AA; }
     .process:hover h3 {

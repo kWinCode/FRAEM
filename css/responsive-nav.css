@@ -43,6 +43,7 @@ a:hover {
   width: 100%;
   display: block;
   list-style: none;
+  text-transform: uppercase;
 }
 
 .nav-collapse li {
