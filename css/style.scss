@@ -193,6 +193,7 @@ footer{
 
 #logo{
     @include vertical-align;
+    top: 60%;
     margin: 0 auto;
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter:         drop-shadow(5px 5px 5px #222);
@@ -270,12 +271,15 @@ footer{
     text-align: center;
     
     h1{
-        /*font-family: 'Homemade Apple', cursive;
-        font-family: 'Lato' !important;
-        font-style: oblique;
-        font-weight: 300;*/
         font-family: 'Across The Road';
         font-size: 5rem;
+    }
+    
+    @media only screen and (max-width: 40.063em) {
+        
+        h1{
+            font-size: 2rem;
+        }
     }
 }
 
@@ -321,9 +325,9 @@ body.en :lang(de){
 .parallax-window {
     height: 250px;
     background: transparent;
-    -moz-box-shadow:    inset 0 0 10px #000000;
+    /*-moz-box-shadow:    inset 0 0 10px #000000;
    -webkit-box-shadow: inset 0 0 10px #000000;
-   box-shadow:         inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;*/
 }
 
 @media only screen and (max-width: 40.063em) {
