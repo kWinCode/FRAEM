@@ -16,7 +16,7 @@ html {
   position: absolute;
   left: 50%;
   top: 50%;
-  background-image: url(../img/96.gif);
+  background-image: url(../img/gears.gif);
   background-repeat: no-repeat;
   background-position: center;
   margin: -100px 0 0 -100px; }
@@ -188,8 +188,13 @@ footer {
 
 @media only screen and (max-width: 40.063em) {
   #home {
-    background-image: url("../video/ocean.jpg");
-    /*height: 400px;*/ }
+    background-image: url("../video/2.png");
+    background-position: center;
+    background-size: cover;
+    height: 100%; }
+
+  #down-arrow {
+    margin-top: 15%; }
 
   #block {
     display: none; }
@@ -199,7 +204,7 @@ footer {
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
-    top: 50%; } }
+    top: 60%; } }
 @font-face {
   font-family: 'Across The Road';
   src: url("Across_the_Road.ttf"); }
@@ -257,7 +262,7 @@ box-shadow:         inset 0 0 10px #000000;*/ }
   .team h4 span {
     font-size: 0.9rem;
     font-family: 'Lato' !important;
-    font-style: normal;
+    font-style: italic;
     font-weight: 400;
     display: block;
     padding: 3% 0; }
@@ -277,8 +282,10 @@ ul.social-team {
       margin: 0 5px; }
     ul.social-team li a:hover {
       color: #1D1D1D !important; }
-    ul.social-team li a .fa:hover {
-      color: #4086AA; }
+    ul.social-team li a .fa-facebook:hover {
+      color: #3b5998; }
+    ul.social-team li a .fa-youtube:hover {
+      color: #cd201f; }
   ul.social-team a:visited {
     display: inline-block;
     margin: 0 5px; }
@@ -312,7 +319,7 @@ ul.social-team {
   transition: all 0.7s ease; }
 
 .description {
-  text-align: justify; }
+  text-align: center; }
 
 /* ==============================================
     Video Section
@@ -553,7 +560,8 @@ iframe {
 
 #youtube {
   margin-top: 5%;
-  text-align: center; }
+  text-align: center;
+  font-weight: 700; }
 
 /* ==============================================
     Clients Section
@@ -579,6 +587,12 @@ iframe {
 /* ==============================================
     Services Section
 =============================================== */
+.fa-youtube:hover {
+  color: #cd201f; }
+
+.fa-facebook:hover {
+  color: #3b5998; }
+
 .process:hover .process-hover {
   background: #4086AA; }
 
@@ -604,7 +618,7 @@ iframe {
     .process h3 span {
       font-size: 2rem;
       display: block;
-      color: #1D1D1D; }
+      color: #4086AA; }
   .process:hover {
     background: #4086AA; }
     .process:hover h3 {
@@ -793,6 +807,8 @@ ul.contact-detail {
       border-bottom: none; }
     ul.contact-detail li i {
       margin-right: 5px; }
+    ul.contact-detail li .fa {
+      font-size: 1.7em; }
   ul.contact-detail a:hover {
     color: #ccc; }
 

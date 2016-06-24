@@ -46,7 +46,7 @@ html{
     position: absolute;
     left: 50%;
     top: 50%;
-    background-image: url(../img/96.gif);
+    background-image: url(../img/gears.gif);
     background-repeat: no-repeat;
     background-position: center;
     margin: -100px 0 0 -100px;
@@ -185,6 +185,7 @@ footer{
 
 .fa{
     color: $background-color;
+    //font-size: 1.8em !important;
 }
 
 #down-arrow{
@@ -244,8 +245,14 @@ footer{
 @media only screen and (max-width: 40.063em) {
     
     #home{
-        background-image: url('../video/ocean.jpg');
-        /*height: 400px;*/
+        background-image: url('../video/2.png');
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+    }
+    
+    #down-arrow{
+        margin-top: 15%;
     }
     
     #block{
@@ -257,7 +264,7 @@ footer{
         -webkit-transform: none;
         -ms-transform: none;
         transform: none;
-        top: 50%;
+        top: 60%;
     }
 }
 
@@ -348,7 +355,7 @@ body.en :lang(de){
     h4 span {
         font-size: 0.9rem;
         font-family: 'Lato' !important;
-        font-style: normal;
+        font-style: italic;
         font-weight: 400;
         display: block;
         padding: 3% 0;
@@ -374,8 +381,11 @@ ul.social-team {
             &:hover {
                 color: $nav-color !important;
             }
-            .fa:hover{
-                color: $link-color;
+            .fa-facebook:hover{
+                color: #3b5998;
+            }
+            .fa-youtube:hover{
+                color: #cd201f;
             }
         }
     }
@@ -416,7 +426,7 @@ ul.social-team {
 }
 
 .description{
-    text-align: justify;
+    text-align: center;
 }
 
 
@@ -696,6 +706,7 @@ iframe{
 #youtube{
     margin-top: 5%;
     text-align: center;
+    font-weight: 700;
 }
 
 /* ==============================================
@@ -729,6 +740,14 @@ iframe{
     Services Section
 =============================================== */
 
+.fa-youtube:hover{
+    color: #cd201f;
+}
+
+.fa-facebook:hover{
+    color: #3b5998;
+}
+
 .process:hover .process-hover{
     background:$link-color;
 }
@@ -760,7 +779,7 @@ iframe{
         span {
             font-size: 2rem;
             display: block;
-            color: $nav-color;
+            color: $link-color;
         }
     }
     &:hover {
@@ -980,6 +999,9 @@ ul.contact-detail {
         }
         i {
             margin-right: 5px;
+        }
+        .fa{
+            font-size: 1.7em;
         }
         a:link {
         }
