@@ -848,13 +848,13 @@ iframe{
     padding: 80px 0;
     margin: 0;
     text-align: center;
-    h2 {
-        color: $white;
-    }
-    h3 {
-        color: $white;
+    text-shadow: 2px 2px 5px #222;
+    
+    h4{
+        margin-bottom: 5%;
     }
 }
+
 .parallax-overlay {
     background: $black_70;
     width: 100%;
@@ -863,7 +863,7 @@ iframe{
     padding: 120px 0;
 }
 .responsive-parallax {
-    background: $url_overlay repeat top left ,$url_contact repeat-y fixed 50% center rgba(0, 0, 0, 0);
+    background: /*$url_overlay repeat top left ,*/$url_contact repeat-y fixed 50% center rgba(0, 0, 0, 0);
     padding: 0;
 }
 #contact {
@@ -877,7 +877,7 @@ iframe{
 label {
     display: block;
     margin-bottom: 10px;
-    font-size: 14px;
+    font-size: 1em;
     color: #fff;
 }
 input[type=text] {
