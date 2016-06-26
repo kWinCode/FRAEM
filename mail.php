@@ -12,7 +12,7 @@
       }
       
       //send email
-      mail( "office@fraem.at", "Contact Form: ".$_POST['name'], $_POST['text'], "From:" . $_POST['email'] );
+      mail( "office@fraem.at", "Neue Website-Nachricht von: ".$_POST['name'], $_POST['text'], "From:" . $_POST['email'] );
       
     }
     ?>
