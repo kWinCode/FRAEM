@@ -38,7 +38,7 @@ html{
     right: 0;
     bottom: 0;
     background-color: $white;
-    z-index: 99;
+    z-index: 9998;
 }
 #status {
     width: 200px;
@@ -51,7 +51,6 @@ html{
     background-position: center;
     margin: -100px 0 0 -100px;
 }
-
 
 body{
     overflow: hidden;
@@ -72,6 +71,7 @@ h1{
 
 
 .noBackground{
+    width: 100%;
     display: none;
     background-color: none;
 }
@@ -81,6 +81,26 @@ h1{
 	background: $white;
     opacity: 0.95;
     box-shadow: 1px 1px 6px #5A5A5A;
+}
+
+.scroll-arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    text-indent: -9999px;
+    background: url('../img/up-arrow.png') no-repeat;
+    background-size: cover;
+    background-color: $nav-color;
+    z-index: 999
+}
+
+.scroll-arrow:hover{
+    opacity: 1;
 }
 
 #screen-nav{
@@ -93,6 +113,7 @@ h1{
     #screen-nav{
         width: 95%;
     }
+    
 }
 
 h2.subtitle {
@@ -201,6 +222,27 @@ footer{
     width: 40%;
 }
 
+#logo-mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 40.063em) {
+    
+    #logo{
+        display: none;
+    }
+    
+    #logo-mobile{
+        display: initial;
+        @include vertical-align;
+        top: 75%;
+        margin: 0 auto;
+        -webkit-filter: drop-shadow(5px 5px 5px #222);
+        filter:         drop-shadow(5px 5px 5px #222);
+        width: 80%;
+    }
+}
+
 .headline{
     margin-bottom: 5%;
     text-align: center;
@@ -265,6 +307,10 @@ footer{
         -ms-transform: none;
         transform: none;
         top: 60%;
+    }
+    
+    .headline:before, .headline:after{
+        width: 20%;
     }
 }
 
@@ -852,6 +898,7 @@ iframe{
     
     h4{
         margin-bottom: 5%;
+        font-size: 1.5em;
     }
 }
 
@@ -1023,4 +1070,8 @@ ul.contact-detail {
     font-size: 4em;
     padding-top: 5%;
     padding-bottom: 5%;
+}
+
+.distance{
+    margin-bottom: 10%;
 }

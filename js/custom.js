@@ -33,6 +33,28 @@ $("#en").click(function(){
 $("#de").click(function(){
   document.body.className = 'de';
 });
+    
+$(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+            $('.scroll-arrow').fadeIn();
+        } else {
+            $('.scroll-arrow').fadeOut();
+        }
+    });
+    
+$('#scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+    
+$('.scroll-arrow').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
             
 /* ==============================================
     variable screen height
